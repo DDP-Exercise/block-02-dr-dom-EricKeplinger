@@ -18,7 +18,7 @@
  *     is watching. We have to do it the right way.
  *     The JavaScript way!
  *
- *     Bratlsoft - 2026-03-15
+ *     Eric Keplinger - 2026-03-28
  *******************************************************/
 
 /**
@@ -29,8 +29,11 @@
 const p = document.getElementsByTagName("p");
 p[0].style.color = "black";
 p[0].style.backgroundColor = "white";
+p[0].textContent = "We care for simplistic design!";
 p[1].style.color = "black";
 p[1].style.backgroundColor = "white";
+p[1].textContent = "Let us introduce to you our list of Web-Heroes:";
+
 
 
 
@@ -45,12 +48,14 @@ ul[0].remove();
 
 
 
+
 /**
  * TODO 3:
  * Wow! You are so powerful! Quick now, set our heroes of the web free!
  * And while at it, let the world know again, that they are back in town!
  */
-
+const ul2 = document.getElementById("heroes_of_the_web");
+ul2.style.visibility = "visible";
 
 
 /**
