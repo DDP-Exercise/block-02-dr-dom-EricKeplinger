@@ -26,6 +26,8 @@
  * First of all, we need to be able to read the text again,
  * without the risk of catching an eye infection!
  */
+document.querySelectorAll("p").forEach(p => {p.style.color = "black";});
+document.querySelectorAll("p").forEach(p => {p.style.backgroundColor = "white";});
 
 
 
