@@ -26,8 +26,11 @@
  * First of all, we need to be able to read the text again,
  * without the risk of catching an eye infection!
  */
-document.querySelectorAll("p").forEach(p => {p.style.color = "black";});
-document.querySelectorAll("p").forEach(p => {p.style.backgroundColor = "white";});
+const p = document.getElementsByTagName("p");
+p[0].style.color = "black";
+p[0].style.backgroundColor = "white";
+p[1].style.color = "black";
+p[1].style.backgroundColor = "white";
 
 
 
@@ -37,7 +40,8 @@ document.querySelectorAll("p").forEach(p => {p.style.backgroundColor = "white";}
  * Great job! So much easier on the eyes! Now, let's tackle those minions!
  * Can't we just remove them all together?
  */
-
+const ul = document.getElementsByTagName("ul");
+ul[0].remove();
 
 
 
