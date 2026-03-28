@@ -63,7 +63,8 @@ ul2.style.visibility = "visible";
  * Our Webpage is safe again! But Dr. Dom is still holding our Headline as a hostage!
  * Do your thing, savior!
  */
-
+const tile = document.getElementById("title");
+tile.textContent = "We, the mighty Heroes of the web, will protect you!";
 
 
 /**
