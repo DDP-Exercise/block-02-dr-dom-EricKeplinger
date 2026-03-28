@@ -75,3 +75,6 @@ tile.textContent = "We, the mighty Heroes of the web, will protect you!";
  * It might sound paranoid. But I can't get rid of the feeling, that he is still here,
  * somewhere in the DOM. I can still feel his Code. Can you identify the source and remove it?
  */
+
+const dom = document.getElementsByTagName("script");
+dom[0].remove();
