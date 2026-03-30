@@ -16,9 +16,20 @@
 
 //TODO: Place one object here.
 
-let Obi_Wan = document.createElement("p");
-Obi_Wan.textContent = "Hello there!";//Obi-Wan Kenobi is the master of the Highground
+let SAVIOR = {
+    name: "Obi-Wan",
+    age: 57,
+    location: "Tattooine",
+    hobbies: ["Jedi training", "Meditation", "Saving Luke"],
+    type_of_companion: "droid",
+    companion: {
+        name: "R2D2",
+        type: "astromech",
+        color: "blue/white",
+        personality: "asshole"
+    }
 
+};
 /*******************************************************
  *   DO NOT CHANGE THE CODE BELOW!
  *******************************************************/
