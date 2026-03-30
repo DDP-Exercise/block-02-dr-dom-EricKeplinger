@@ -19,6 +19,8 @@
 
 const X = "Savior (X)";
 const O = "Dr. DOM (O)";
+let counter_x = 0;
+let counter_o = 0;
 
 //Some of your epic battles:
 const BATTLEFIELD =
@@ -27,7 +29,8 @@ const BATTLEFIELD =
         [X, X, X],
         [O, O, X],
     ];
-
+console.log(BATTLEFIELD);
+check_horizontal3x3();
  const BATTLEFIELD_2 =
      [
          [null, X, X],
@@ -69,6 +72,30 @@ const BATTLEFIELD =
 //TODO: Check if the battle is over, and if so, announce the winner!
 
 // Check Horizontal
+function check_horizontal3x3(){
+    if (counter_x < 3 && counter_o < 3){
+        for (let i = 0; i < BATTLEFIELD.length; i++) {
+            counter_x = 0;
+            counter_o = 0;
+            for(let j = 0; j < BATTLEFIELD[i].length; j++) {
+                let spot = BATTLEFIELD[i][j];
+                if (spot === "Savior (X)") {
+                    counter_x++;
+                    if (counter_x === 3){
+                        console.log("The Savior has won the game");
+                    }
+                } else if (spot === "Dr. DOM (O)") {
+                    counter_o++;
+                    if (counter_o === 3){
+                        console.log("Dr. Dom has won the game");
+                }
+                }
+            }
+        }
+    }
+
+};
+
 // Check Vertical
 // Check Main Diagonal
 // Check Anti Diagonal
