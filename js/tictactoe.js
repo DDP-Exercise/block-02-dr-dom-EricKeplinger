@@ -28,28 +28,28 @@ const BATTLEFIELD =
         [O, O, X],
     ];
 
- const BATTLEFIELD =
+ const BATTLEFIELD_2 =
      [
          [null, X, X],
          [X, O, null],
          [O, O, O],
      ];
 
- const BATTLEFIELD =
+ const BATTLEFIELD_3 =
      [
          [O, O, X],
          [X, O, X],
          [O, X, X],
      ];
 
- const BATTLEFIELD =
+ const BATTLEFIELD_4 =
      [
          [O, X, X],
          [X, O, X],
          [O, X, O],
      ];
 
- const BATTLEFIELD =
+ const BATTLEFIELD_5 =
      [
          [O, X, X, X],
          [X, O, X, O],
@@ -57,7 +57,7 @@ const BATTLEFIELD =
          [X, O, X, X],
      ];
 
- const BATTLEFIELD =
+ const BATTLEFIELD_6 =
      [
          [O, X, X, X, null],
          [X, O, X, O, O],
