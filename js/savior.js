@@ -18,7 +18,7 @@
  *     is watching. We have to do it the right way.
  *     The JavaScript way!
  *
- *     Bratlsoft - 2026-03-15
+ *     Eric Keplinger - 2026-03-28
  *******************************************************/
 
 /**
@@ -26,6 +26,14 @@
  * First of all, we need to be able to read the text again,
  * without the risk of catching an eye infection!
  */
+const p = document.getElementsByTagName("p");
+p[0].style.color = "black";
+p[0].style.backgroundColor = "white";
+p[0].textContent = "We care for simplistic design!";
+p[1].style.color = "black";
+p[1].style.backgroundColor = "white";
+p[1].textContent = "Let us introduce to you our list of Web-Heroes:";
+
 
 
 
@@ -35,6 +43,8 @@
  * Great job! So much easier on the eyes! Now, let's tackle those minions!
  * Can't we just remove them all together?
  */
+const ul = document.getElementsByTagName("ul");
+ul[0].remove();
 
 
 
@@ -44,7 +54,8 @@
  * Wow! You are so powerful! Quick now, set our heroes of the web free!
  * And while at it, let the world know again, that they are back in town!
  */
-
+const ul2 = document.getElementById("heroes_of_the_web");
+ul2.style.visibility = "visible";
 
 
 /**
@@ -52,7 +63,8 @@
  * Our Webpage is safe again! But Dr. Dom is still holding our Headline as a hostage!
  * Do your thing, savior!
  */
-
+const tile = document.getElementById("title");
+tile.textContent = "We, the mighty Heroes of the web, will protect you!";
 
 
 /**
@@ -63,3 +75,6 @@
  * It might sound paranoid. But I can't get rid of the feeling, that he is still here,
  * somewhere in the DOM. I can still feel his Code. Can you identify the source and remove it?
  */
+
+const dom = document.getElementsByTagName("script");
+dom[0].remove();

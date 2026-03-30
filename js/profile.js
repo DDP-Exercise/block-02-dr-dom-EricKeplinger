@@ -11,11 +11,25 @@
  *     For my code to show it's full potential, I just
  *     need one object. Can you help me out?
  *
- *     Bratlsoft - 2026-03-15
+ *     Eric Keplinger - 2026-03-28
  *******************************************************/
 
 //TODO: Place one object here.
 
+let SAVIOR = {
+    name: "Obi-Wan",
+    age: 57,
+    location: "Tattooine",
+    hobbies: ["Jedi training", "Meditation", "Saving Luke"],
+    type_of_companion: "droid",
+    companion: {
+        name: "R2D2",
+        type: "astromech",
+        color: "blue/white",
+        personality: "asshole"
+    }
+
+};
 /*******************************************************
  *   DO NOT CHANGE THE CODE BELOW!
  *******************************************************/
