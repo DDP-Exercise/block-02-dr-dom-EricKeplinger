@@ -21,6 +21,7 @@ const X = "Savior (X)";
 const O = "Dr. DOM (O)";
 let counter_x = 0;
 let counter_o = 0;
+let winner = "Don´t know it yet";
 
 //Some of your epic battles:
 const BATTLEFIELD =
@@ -31,27 +32,31 @@ const BATTLEFIELD =
     ];
 console.log(BATTLEFIELD);
 check_horizontal3x3();
+check_vertical3x3();
  const BATTLEFIELD_2 =
      [
          [null, X, X],
          [X, O, null],
          [O, O, O],
      ];
-
+check_horizontal3x3();
+check_vertical3x3();
  const BATTLEFIELD_3 =
      [
          [O, O, X],
          [X, O, X],
          [O, X, X],
      ];
-
+check_horizontal3x3();
+check_vertical3x3();
  const BATTLEFIELD_4 =
      [
          [O, X, X],
          [X, O, X],
          [O, X, O],
      ];
-
+check_horizontal3x3();
+check_vertical3x3();
  const BATTLEFIELD_5 =
      [
          [O, X, X, X],
@@ -59,7 +64,8 @@ check_horizontal3x3();
          [O, X, O, X],
          [X, O, X, X],
      ];
-
+check_horizontal4x4();
+check_vertical4x4();
  const BATTLEFIELD_6 =
      [
          [O, X, X, X, null],
@@ -68,12 +74,12 @@ check_horizontal3x3();
          [X, null, X, O, O],
          [X, null, O, X, O],
      ];
-
+check_horizontal5x5();
+check_vertical5x5();
 //TODO: Check if the battle is over, and if so, announce the winner!
 
 // Check Horizontal
 function check_horizontal3x3(){
-    if (counter_x < 3 && counter_o < 3){
         for (let i = 0; i < BATTLEFIELD.length; i++) {
             counter_x = 0;
             counter_o = 0;
@@ -92,10 +98,154 @@ function check_horizontal3x3(){
                 }
             }
         }
+}
+
+function check_vertical3x3(){
+        for(let j = 0; j < BATTLEFIELD[0].length; j++){
+            counter_x = 0;
+            counter_o = 0;
+            for (let i = 0; i < BATTLEFIELD.length; i++) {
+                let spot = BATTLEFIELD[i][j];
+                if (spot === "Savior (X)") {
+                    counter_x++;
+                    if (counter_x === 3){
+                        console.log("The Savior has won the game");
+                    }
+                } else if (spot === "Dr. DOM (O)") {
+                    counter_o++;
+                    if (counter_o === 3){
+                        console.log("Dr. Dom has won the game");
+                    }
+                }
+            }
+        }
+}
+
+function check_horizontal4x4(){
+    for (let i = 0; i < BATTLEFIELD.length; i++) {
+        counter_x = 0;
+        counter_o = 0;
+        for(let j = 0; j < BATTLEFIELD[i].length; j++) {
+            let spot = BATTLEFIELD[i][j];
+            if (spot === "Savior (X)") {
+                counter_x++;
+                if (counter_x === 4){
+                    console.log("The Savior has won the game");
+                }
+            } else if (spot === "Dr. DOM (O)") {
+                counter_o++;
+                if (counter_o === 4){
+                    console.log("Dr. Dom has won the game");
+                }
+            }
+        }
     }
+}
 
-};
+function check_vertical4x4(){
+    for(let j = 0; j < BATTLEFIELD[0].length; j++){
+        counter_x = 0;
+        counter_o = 0;
+        for (let i = 0; i < BATTLEFIELD.length; i++) {
+            let spot = BATTLEFIELD[i][j];
+            if (spot === "Savior (X)") {
+                counter_x++;
+                if (counter_x === 4){
+                    console.log("The Savior has won the game");
+                }
+            } else if (spot === "Dr. DOM (O)") {
+                counter_o++;
+                if (counter_o === 4){
+                    console.log("Dr. Dom has won the game");
+                }
+            }
+        }
+    }
+}
 
+function check_horizontal5x5(){
+    for (let i = 0; i < BATTLEFIELD.length; i++) {
+        counter_x = 0;
+        counter_o = 0;
+        for(let j = 0; j < BATTLEFIELD[i].length; j++) {
+            let spot = BATTLEFIELD[i][j];
+            if (spot === "Savior (X)") {
+                counter_x++;
+                if (counter_x === 4){
+                    console.log("The Savior has won the game");
+                }
+            } else if (spot === "Dr. DOM (O)") {
+                counter_o++;
+                if (counter_o === 4){
+                    console.log("Dr. Dom has won the game");
+                }
+            }
+        }
+    }
+}
+
+function check_vertical5x5(){
+    for(let j = 0; j < BATTLEFIELD[0].length; j++){
+        counter_x = 0;
+        counter_o = 0;
+        for (let i = 0; i < BATTLEFIELD.length; i++) {
+            let spot = BATTLEFIELD[i][j];
+            if (spot === "Savior (X)") {
+                counter_x++;
+                if (counter_x === 5){
+                    console.log("The Savior has won the game");
+                }
+            } else if (spot === "Dr. DOM (O)") {
+                counter_o++;
+                if (counter_o === 5){
+                    console.log("Dr. Dom has won the game");
+                }
+            }
+        }
+    }
+}
+
+function check_horizontal6x6(){
+    for (let i = 0; i < BATTLEFIELD.length; i++) {
+        counter_x = 0;
+        counter_o = 0;
+        for(let j = 0; j < BATTLEFIELD[i].length; j++) {
+            let spot = BATTLEFIELD[i][j];
+            if (spot === "Savior (X)") {
+                counter_x++;
+                if (counter_x === 6){
+                    console.log("The Savior has won the game");
+                }
+            } else if (spot === "Dr. DOM (O)") {
+                counter_o++;
+                if (counter_o === 6){
+                    console.log("Dr. Dom has won the game");
+                }
+            }
+        }
+    }
+}
+
+function check_vertical6x6(){
+    for(let j = 0; j < BATTLEFIELD[0].length; j++){
+        counter_x = 0;
+        counter_o = 0;
+        for (let i = 0; i < BATTLEFIELD.length; i++) {
+            let spot = BATTLEFIELD[i][j];
+            if (spot === "Savior (X)") {
+                counter_x++;
+                if (counter_x === 6){
+                    console.log("The Savior has won the game");
+                }
+            } else if (spot === "Dr. DOM (O)") {
+                counter_o++;
+                if (counter_o === 6){
+                    console.log("Dr. Dom has won the game");
+                }
+            }
+        }
+    }
+}
 // Check Vertical
 // Check Main Diagonal
 // Check Anti Diagonal
